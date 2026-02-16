@@ -1,0 +1,17 @@
+{
+  "frontend/src/App.tsx": "Main application component that handles authentication flow, profile setup, and renders the home page or welcome screen based on user state.",
+  "frontend/src/hooks/useQueries.ts": "Custom React Query hooks for all backend operations; useCreateHouse creates a house, immediately links it to the user profile via saveCallerUserProfile, invalidates all relevant queries, and displays a welcoming success toast to ensure smooth transition to the dashboard.",
+  "frontend/src/components/Header.tsx": "Application header with FairShare branding and login/logout functionality.",
+  "frontend/src/components/Footer.tsx": "Footer component with copyright and caffeine.ai attribution.",
+  "frontend/src/components/ProfileSetupModal.tsx": "Modal dialog for first-time user profile setup requiring name input.",
+  "frontend/src/pages/HomePage.tsx": "Main authenticated user page with tabbed interface for house overview, chores management, and ledger view; automatically resets to overview tab when a house is created or changes to ensure users see their new dashboard immediately.",
+  "frontend/src/components/CreateHouseForm.tsx": "Form component for creating a new house with name and currency selection; uses mutate (not mutateAsync) to trigger house creation with proper error handling, loading states with Loader2 spinner, and error alerts.",
+  "frontend/src/components/HouseOverview.tsx": "Dashboard showing user balance, assigned chores count, house members, and house information with admin controls.",
+  "frontend/src/components/ManageHousematesDialog.tsx": "Admin dialog for adding and removing house members using Principal IDs.",
+  "frontend/src/components/ChoresList.tsx": "List view of all chores with complete, swap, and edit actions based on user role and assignment.",
+  "frontend/src/components/AddChoreDialog.tsx": "Admin dialog for creating new chores with name, value, frequency, and assignee selection.",
+  "frontend/src/components/EditChoreDialog.tsx": "Admin dialog for updating the monetary value of existing chores.",
+  "frontend/src/components/SwapChoreDialog.tsx": "Dialog allowing any house member to reassign a chore to a different housemate.",
+  "frontend/src/components/LedgerView.tsx": "Displays user balance, transaction history table, and admin settlement controls.",
+  "frontend/src/index.css": "Global styles with OKLCH color system featuring purple/teal theme for light and dark modes."
+}
